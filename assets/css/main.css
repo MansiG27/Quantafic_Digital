@@ -21,6 +21,7 @@
   --color-default: #364d59;
   --color-primary: #169BD6;
   --color-secondary: #212C64;
+  --color-tertiary: white;
 }
 
 /* Smooth scroll behavior */
@@ -945,6 +946,8 @@ section {
 .projects .portfolio-content {
   position: relative;
   overflow: hidden;
+  height: 250px;
+  width: 250px;
 }
 
 .projects .portfolio-content img {
@@ -1011,6 +1014,12 @@ section {
 .projects .portfolio-content:hover img {
   transform: scale(1.1);
 }
+
+.projects .portfolio-content .portfolio-info h3{
+  color: white;
+}
+
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1629,21 +1638,35 @@ section {
 }
 
 .service-details .services-img {
+  
+  margin-left: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  height: 40%;
+  width: 40%;
 }
 
+
 .service-details h3 {
+  text-align: center;
   font-size: 28px;
   font-weight: 700;
 }
 
 .service-details h4 {
+  
   font-size: 20px;
   font-weight: 700;
 }
 
+.service-details h5 {
+  text-align: center;
+}
+
 .service-details p {
+
   font-size: 15px;
+  text-align: center;
 }
 
 .service-details ul {
@@ -1965,6 +1988,43 @@ section {
 
 .hero .info .btn-get-started:hover {
   background: var(--color-primary);
+}
+
+.hero .info .bi:hover{
+  color: #D3E8FD;
+  
+}
+
+.hero .info .bi{
+  position: absolute;
+  /* top: calc(100vh - 98px); */
+  left: calc(50% - 30px);
+  width: 0px;
+  height: 40px;
+ 
+}
+
+.hero .info .bi::after{
+  content: " ";
+  position: absolute;
+  top : 12px;
+  left: -10px;
+  transform: rotateZ(45deg);
+
+}
+@keyframes jumpInfinte{
+  0%{
+    margin-top: 0;
+  }
+  50%{
+    margin-top: 20px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+.hero .info .bi{
+  animation: jumpInfinte 1.5s infinite;
 }
 
 .hero .carousel-control-prev {
