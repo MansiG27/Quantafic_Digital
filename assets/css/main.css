@@ -11,10 +11,12 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
+  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  --font-primary: "Mulish", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
 }
+
+
 
 /* Colors */
 :root {
@@ -33,7 +35,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  font-family: var(--font-primary);
   /* color: var(--color-default); */
   overflow-x: hidden;
 }
@@ -332,7 +334,7 @@ section {
     font-size: 14px;
     font-weight: 500;
     color: var(--color-secondary);
-    text-transform: uppercase;
+    
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -1618,6 +1620,9 @@ section {
   margin-bottom: 20px;
 }
 
+.service-details{
+  padding: 50PX;
+}
 .service-details .services-list a {
   display: block;
   line-height: 1;
@@ -1639,18 +1644,18 @@ section {
 
 .service-details .services-img {
   
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 40%;
-  width: 40%;
+  margin-left: 150px;
+  padding: 20px;
+  height: 30%;
+  width: 30%;
 }
 
 
 .service-details h3 {
-  text-align: center;
+  text-align: left;
   font-size: 28px;
   font-weight: 700;
+  padding-left: 58px;
 }
 
 .service-details h4 {
@@ -1664,9 +1669,16 @@ section {
 }
 
 .service-details p {
-
+  
+  margin: 8px;
   font-size: 15px;
-  text-align: center;
+  
+}
+
+.service-details .para{
+  
+  padding-left: 50px;
+  text-align: left;
 }
 
 .service-details ul {
@@ -1927,11 +1939,191 @@ section {
   inset: 0;
 }
 
+
+/* Background image */
+.hero .carousel-item{
+  
+  animation: 1s polygon reverse;
+  animation: 1s polygon;
+  
+}
+/* @keyframes polygon {
+  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
+  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
+}  */
+
 .hero .info {
   position: absolute;
   inset: 0;
   z-index: 2;
 }
+
+.hero .light{
+  position: absolute;
+  width: 0px;
+  opacity: .75;
+  background-color: rgb(253, 0, 0);
+  box-shadow: #e9f1f1 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.hero .light .x1{
+  -webkit-animation: floatup 4s infinite linear;
+  -moz-animation: floatup 4s infinite linear;
+  -o-animation: floatup 4s infinite linear;
+  animation: floatup 4s infinite linear;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
+}
+.hero .light .x2{
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+}
+.hero .light .x3{
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
+}
+
+.hero .light .x4{
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.hero .light .x5{
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
+}
+
+.hero .light .x6{
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
+}
+
+.hero .light .x7{
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
+}
+
+.hero .light .x8{
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
+}
+
+.hero .light .x9{
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+}
+
+ @-webkit-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+ }
+ @-moz-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-o-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+/* .hero .img1{
+  margin-bottom: 250px; */
+  /* margin-left: 40%; */
+  /* opacity: 0%; */
+  /* animation: curve 4s ;
+} */
+/* @keyframes curve {
+  0%{opacity: 0%; margin-left: 400px;}
+}  */
+
+
+/* .hero .img1 { 
+  
+  animation: 0s polygon reverse infinite;
+ }
+.hero .img1 { animation: 8s polygon infinite; }
+@keyframes polygon {
+  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
+  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
+} */
 
 @media (max-width: 768px) {
   .hero .info {
@@ -1941,12 +2133,56 @@ section {
 
 .hero .info h2 {
   color: #fff;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-top: 90px;
+  /* padding-bottom: 10px; */
   font-size: 56px;
   font-weight: 700;
   position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  
 }
+
+/* .hero .info h2:first-of-type {
+  opacity: 100%;
+  animation: showup 7s infinite ;
+
+}
+
+.hero .info h2:last-of-type{
+  width: 0px;
+  opacity: 100%;
+  animation: reveal 7s ;
+}
+
+.hero .info h2:last-of-type span{
+  opacity: 100%;
+  margin-left: -500px;
+  animation: slidein 7s ;
+} */
+
+/* @keyframes showup {
+  0% {opacity:1;}
+  20% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:1;}
+}
+
+@keyframes slidein {
+  0% { margin-left:-700px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+  0% {opacity:1;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:500px;}
+  80% {opacity:1;}
+  100% {opacity:1;width:500px;}
+} */
 
 /*.hero .info h2:after {
   content: "";
