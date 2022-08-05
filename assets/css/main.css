@@ -82,6 +82,7 @@ section {
 }
 
 .section-header h2 {
+  font-family: var(--font-tertiary);
   font-size: 32px;
   font-weight: 700;
   position: fi;
@@ -1940,6 +1941,17 @@ section {
 }
 
 
+ #tsparticles{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #000B43;
+  
+  
+}
+
+
+
 /* Background image */
 .hero .carousel-item{
   
@@ -3000,3 +3012,4 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
