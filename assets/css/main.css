@@ -1299,6 +1299,15 @@ section {
   background-size: cover;
   background-position: center;
 }
+.about .para1{
+  display: flex;
+}
+.about .para2{
+  padding-left: 50px;
+}
+.about .para3{
+  padding-left: 50px;
+}
 
 @media (min-width: 992px) {
   .about .about-img {
