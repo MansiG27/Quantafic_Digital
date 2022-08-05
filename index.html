@@ -17,6 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
   
 
   <!-- Vendor CSS Files -->
@@ -29,6 +33,13 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  
+  <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+        integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+        crossorigin="anonymous">
+  </script>
 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.1.0
@@ -74,37 +85,161 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
-<div class="light x1"></div>
-    <div class="light x2"></div>
-    <div class="light x3"></div>
-    <div class="light x4"></div>
-    <div class="light x5"></div>
-    <div class="light x6"></div>
-    <div class="light x7"></div>
-    <div class="light x8"></div>
-    <div class="light x9"></div>
     <div class="info d-flex align-items-center">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="600">
-            <div><h2>Quantafic <span>Digital</span></h2></div>
+            <div><h2>Quantafic <span>Digital</span></h2>
+            
+            
+            </div>
+       
             <!-- <a data-aos="fade-up" data-aos-delay="200" href="#get-started"  ><i class="bi bi-arrow-down-circle-fill fa-3x" ></i></a> -->
             </div><!--col-->
             </div><!--row-->
-          <!-- <div class="img1"> 
-          <input type="image" src="assets/img/img2.png" width="18%" height="60%"> -->
-          </div><!-- image animation  -->
       </div><!-- container  -->
     </div><!-- info  -->
 
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
-
-      <div class="carousel-item active" style="background-image: url(assets/img/Neurons.jpg)"></div>
+    
       
-    <!-- background animation -->
     
-    </div>
+    <div id = tsparticles></div>
+      <script>
+        tsParticles.load('tsparticles');
+      </script> 
+          <script>
+            const particles = {
+              "fpsLimit": 60,
+              "particles": {
+                "number": {
+                  "value": 80,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#ff0000",
+                  "animation": {
+                    "enable": true,
+                    "speed": 20,
+                    "sync": true
+                  }
+                },
+                "shape": {
+                  "type": "circle",
+                  "stroke": {
+                    "width": 0
+                  },
+                  "polygon": {
+                    "nb_sides": 5
+                  },
+                  "image" : {
+                    "src" : ""
+                  }
+                },
+                "opacity": {
+                  "value": 0.5,
+                  "random": false,
+                  "anim": {
+                    "enable": false,
+                    "speed": 3,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 3,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 20,
+                    "size_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "links": {
+                  "enable": true,
+                  "distance": 100,
+                  "color": "#ffffff",
+                  "opacity": 0.4,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 6,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 0.8
+                  },
+                  "repulse": {
+                    "distance": 200
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true,
+              "background": {
+                "color": "#000B43",
+                "image": "",
+                "position": "50% 50%",
+                "repeat": "no-repeat",
+                "size": "cover"
+              }
+            };
+          
+            tsParticles.load('tsparticles', particles);
+          </script>
+        
+
     
+      <!-- <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500"> -->
+       
+        <!-- <div class="carousel-item active" style="background-image: url(assets/img/Neurons.jpg)"></div> -->
+       <!-- <div class="carousel-item active" style="background-color: #212C64;"></div>
+       
+     
+      </div> -->
+    
+  
   </section><!-- End Hero Section -->
 
   <main id="main">
@@ -339,7 +474,7 @@
                   <!-- <h4>Master Connect</h4> -->
                   <p><h3> Q-CAM </h3></p>
                   <a href="assets/img/QCAM 1.png" title="Q-CAM" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="project-details1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -351,7 +486,7 @@
                   <!-- <h4>Construction 1</h4> -->
                   <p><h3> Q-Verify </h3></p>
                   <a href="assets/img/verifyyy 1.png" title="Q-Verify" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="project-details2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
               
@@ -364,7 +499,7 @@
                   <!-- <h4>Repairs 1</h4> -->
                   <p><h3> Q-Mandate</h3></p>
                   <a href="assets/img/mandate1 1.png" title="Q-Mandate" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="project-details3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -376,7 +511,7 @@
                   <!-- <h4>Design 1</h4> -->
                   <p><h3> Multibureau </h3></p>
                   <a href="assets/img/multibureau 1.png" title="Multiberaue" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="project-details4.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
