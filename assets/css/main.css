@@ -11,9 +11,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   --font-primary: "Mulish", sans-serif;
-  --font-secondary: "Mulish", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
 }
 
 
@@ -35,7 +34,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   /* color: var(--color-default); */
   overflow-x: hidden;
 }
@@ -76,13 +75,14 @@ section {
 }
 
 .section-header {
+  
   text-align: center;
   padding-bottom: 70px;
   
 }
 
 .section-header h2 {
-  font-family: var(--font-tertiary);
+  font-family: var(--font-primary);
   font-size: 32px;
   font-weight: 700;
   position: fi;
@@ -108,6 +108,7 @@ section {
 
 .section-header p {
   margin: 0 auto 0 auto;
+  
 }
 
 .header{
@@ -331,7 +332,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 0 3px;
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     font-size: 14px;
     font-weight: 500;
     color: var(--color-secondary);
@@ -483,7 +484,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     font-size: 15px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
@@ -712,55 +713,75 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Constructions Section
+# features Section
 --------------------------------------------------------------*/
-.constructions .card-item {
+.features .card-item {
   border: 1px solid rgba(82, 86, 94, 0.2);
   background: #fff;
   position: relative;
   border-radius: 0;
 }
 
-.constructions .card-item .card-bg {
-  min-height: 300px;
+.features .card-item .card-bg {
+  min-height: 200px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.constructions .card-item .card-body {
+.features .card-item .card-body {
   padding: 30px;
 }
 
-.constructions .card-item h4 {
+.features .card-item h4 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 15px;
   color: var(--color-secondary);
 }
 
-.constructions .card-item p {
+.features .card-item p {
   color: var(--color-secondary);
   margin: 0;
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# solutions Section
 --------------------------------------------------------------*/
-.services .service-item {
-  padding: 40px;
-  background: #fff;
-  height: 100%;
+
+.solutions .sol-img img{
+  width: 20%;
+  height: 20%;
+  
 }
 
-.services .service-item .icon {
+.solutions .service-item {
+  padding: 20px 20px 20px 10px;
+  background-image: url(../img/solutions-bg1.png);
+  width: fit-content;
+  margin-left: 50px;
+  
+  box-shadow: 5px 5px 10px grey;
+  
+}
+
+
+.solutions .service-item .sol-content{
+  margin-left: 10px;
+  width: 256px;
+  height: 360px;
+   padding: 10px;
+   box-shadow: 5px 5px 10px rgb(8, 0, 53);
+}
+
+.solutions .service-item .icon {
   width: 48px;
   height: 48px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.services .service-item .icon i {
+.solutions .service-item .icon i {
   color: var(--color-secondary);
   font-size: 40px;
   transition: ease-in-out 0.3s;
@@ -769,7 +790,7 @@ section {
   line-height: 1.8;
 }
 
-.services .service-item .icon:before {
+.solutions .service-item .icon:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -782,7 +803,7 @@ section {
   transition: 0.3s;
 }
 
-.services .service-item h3 {
+.solutions .service-item h3 {
   color: var(--color-default);
   font-weight: 700;
   margin: 0 0 20px 0;
@@ -794,23 +815,24 @@ section {
   transition: 0.3s;
 }
 
-.services .service-item p {
+.solutions .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  font-family: var(--font-secondary);
 }
 
-.services .service-item .readmore {
+.solutions .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
   color: var(--color-primary);
 }
 
-.services .service-item:hover .icon:before {
+.solutions .service-item:hover .icon:before {
   background: var(--color-primary);
 }
 
-.services .service-item:hover h3 {
+.solutions .service-item:hover h3 {
   border-color: var(--color-primary);
 }
 
@@ -951,10 +973,24 @@ section {
   overflow: hidden;
   height: 250px;
   width: 250px;
+  padding: 10px;
+  margin-left: 50px;
+  background-color:  #D3E8FD;
+  
+  
 }
+
+.projects .portfolio-content p {
+  font-family: var(--font-secondary);
+  padding: 10px 5px 0px 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
 
 .projects .portfolio-content img {
   transition: 0.3s;
+  border-radius: 3px;
 }
 
 .projects .portfolio-content .portfolio-info {
@@ -986,6 +1022,7 @@ section {
   font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-secondary);
 }
 
 .projects .portfolio-content .portfolio-info .preview-link,
@@ -1140,15 +1177,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Alt Services Section
+# Alt solutions Section
 --------------------------------------------------------------*/
-.alt-services .img-bg {
+.alt-solutions .img-bg {
   background-size: cover;
   background-position: center center;
   min-height: 400px;
 }
 
-.alt-services h3 {
+.alt-solutions h3 {
   font-size: 28px;
   font-weight: 700;
   color: var(--color-secondary);
@@ -1157,7 +1194,7 @@ section {
   position: relative;
 }
 
-.alt-services h3:after {
+.alt-solutions h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1168,11 +1205,11 @@ section {
   bottom: 0;
 }
 
-.alt-services .icon-box {
+.alt-solutions .icon-box {
   margin-top: 50px;
 }
 
-.alt-services .icon-box i {
+.alt-solutions .icon-box i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1188,27 +1225,27 @@ section {
   transition: 0.3s;
 }
 
-.alt-services .icon-box:hover i {
+.alt-solutions .icon-box:hover i {
   background-color: var(--color-primary);
   color: #fff;
 }
 
-.alt-services .icon-box h4 {
+.alt-solutions .icon-box h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-.alt-services .icon-box h4 a {
+.alt-solutions .icon-box h4 a {
   color: #000;
   transition: 0.3s;
 }
 
-.alt-services .icon-box h4 a:hover {
+.alt-solutions .icon-box h4 a:hover {
   color: var(--color-primary);
 }
 
-.alt-services .icon-box p {
+.alt-solutions .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -1220,7 +1257,7 @@ section {
 .about h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   margin: 30px 0;
 }
 
@@ -1299,14 +1336,23 @@ section {
   background-size: cover;
   background-position: center;
 }
+
+.about .para{
+  font-family: var(--font-secondary);
+}
 .about .para1{
   display: flex;
+  font-family: var(--font-secondary);
 }
 .about .para2{
   padding-left: 50px;
 }
 .about .para3{
   padding-left: 50px;
+}
+
+.about .class1{
+  padding-left: 80px;
 }
 
 @media (min-width: 992px) {
@@ -1430,27 +1476,30 @@ section {
 /*--------------------------------------------------------------
 # Servie Cards Section
 --------------------------------------------------------------*/
-.services-cards h3 {
+.solutions-cards h3 {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-secondary);
 }
 
-.services-cards p {
+.solutions-cards p {
   font-size: 15px;
+  font-family: var(--font-secondary);
 }
 
-.services-cards ul li {
+.solutions-cards ul li {
   display: flex;
   align-items: center;
   font-size: 14px;
   padding-top: 10px;
+  font-family: var(--font-secondary);
 }
 
-.services-cards ul li i {
+.solutions-cards ul li i {
   font-size: 16px;
   color: var(--color-primary);
   margin-right: 6px;
+  font-family: var(--font-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -1527,6 +1576,7 @@ section {
   list-style: none;
   padding: 0;
   font-size: 15px;
+  font-family: var(--font-secondary);
 }
 
 .project-details .portfolio-info ul li {
@@ -1540,6 +1590,7 @@ section {
   font-weight: 400;
   color: #838893;
   font-size: 14px;
+  font-family: var(--font-secondary);
 }
 
 .project-details .portfolio-info .btn-visit {
@@ -1563,6 +1614,7 @@ section {
 
 .project-details .portfolio-description p {
   padding: 0;
+  font-family: var(--font-secondary);
 }
 
 .project-details .portfolio-description .testimonial-item {
@@ -1624,7 +1676,7 @@ section {
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.service-details .solutions-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
   margin-bottom: 20px;
@@ -1633,7 +1685,7 @@ section {
 .service-details{
   padding: 50PX;
 }
-.service-details .services-list a {
+.service-details .solutions-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1643,16 +1695,16 @@ section {
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.service-details .solutions-list a.active {
   font-weight: 700;
   border-color: var(--color-primary);
 }
 
-.service-details .services-list a:hover {
+.service-details .solutions-list a:hover {
   border-color: var(--color-primary);
 }
 
-.service-details .services-img {
+.service-details .solutions-img {
   
   margin-left: 150px;
   padding: 20px;
@@ -1682,6 +1734,7 @@ section {
   
   margin: 8px;
   font-size: 15px;
+  font-family: var(--font-secondary);
   
 }
 
@@ -1689,6 +1742,7 @@ section {
   
   padding-left: 50px;
   text-align: left;
+  font-family: var(--font-secondary);
 }
 
 .service-details ul {
@@ -1707,6 +1761,7 @@ section {
   font-size: 20px;
   margin-right: 8px;
   color: var(--color-primary);
+  font-family: var(--font-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -1921,11 +1976,13 @@ section {
 .hero {
   overflow-x: hidden;
   padding: 0;
+  height: 95vh;
+  
 }
 
 .hero .carousel {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 80px 0;
   margin: 0;
   position: relative;
@@ -1962,12 +2019,12 @@ section {
 
 
 /* Background image */
-.hero .carousel-item{
+/* .hero .carousel-item{
   
   animation: 1s polygon reverse;
   animation: 1s polygon;
   
-}
+} */
 /* @keyframes polygon {
   0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
   100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
@@ -1979,152 +2036,7 @@ section {
   z-index: 2;
 }
 
-.hero .light{
-  position: absolute;
-  width: 0px;
-  opacity: .75;
-  background-color: rgb(253, 0, 0);
-  box-shadow: #e9f1f1 0px 0px 20px 2px;
-    opacity: 0;
-    top: 100vh;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-}
-.hero .light .x1{
-  -webkit-animation: floatup 4s infinite linear;
-  -moz-animation: floatup 4s infinite linear;
-  -o-animation: floatup 4s infinite linear;
-  animation: floatup 4s infinite linear;
-  -webkit-transform: scale(1.0);
-  -moz-transform: scale(1.0);
-  -o-transform: scale(1.0);
-  transform: scale(1.0);
-}
-.hero .light .x2{
-  -webkit-animation: floatUp 7s infinite linear;
-  -moz-animation: floatUp 7s infinite linear;
-  -o-animation: floatUp 7s infinite linear;
-  animation: floatUp 7s infinite linear;
-  -webkit-transform: scale(1.6);
-  -moz-transform: scale(1.6);
-  -o-transform: scale(1.6);
-  transform: scale(1.6);
-  left: 15%;
-}
-.hero .light .x3{
-  -webkit-animation: floatUp 2.5s infinite linear;
-  -moz-animation: floatUp 2.5s infinite linear;
-  -o-animation: floatUp 2.5s infinite linear;
-  animation: floatUp 2.5s infinite linear;
-  -webkit-transform: scale(.5);
-  -moz-transform: scale(.5);
-  -o-transform: scale(.5);
-  transform: scale(.5);
-  left: -15%;
-}
 
-.hero .light .x4{
-  -webkit-animation: floatUp 4.5s infinite linear;
-  -moz-animation: floatUp 4.5s infinite linear;
-  -o-animation: floatUp 4.5s infinite linear;
-  animation: floatUp 4.5s infinite linear;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  left: -34%;
-}
-
-.hero .light .x5{
-  -webkit-animation: floatUp 8s infinite linear;
-  -moz-animation: floatUp 8s infinite linear;
-  -o-animation: floatUp 8s infinite linear;
-  animation: floatUp 8s infinite linear;
-  -webkit-transform: scale(2.2);
-  -moz-transform: scale(2.2);
-  -o-transform: scale(2.2);
-  transform: scale(2.2);
-  left: -57%;
-}
-
-.hero .light .x6{
-  -webkit-animation: floatUp 3s infinite linear;
-  -moz-animation: floatUp 3s infinite linear;
-  -o-animation: floatUp 3s infinite linear;
-  animation: floatUp 3s infinite linear;
-  -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
-  -o-transform: scale(.8);
-  transform: scale(.8);
-  left: -81%;
-}
-
-.hero .light .x7{
-  -webkit-animation: floatUp 5.3s infinite linear;
-  -moz-animation: floatUp 5.3s infinite linear;
-  -o-animation: floatUp 5.3s infinite linear;
-  animation: floatUp 5.3s infinite linear;
-  -webkit-transform: scale(3.2);
-  -moz-transform: scale(3.2);
-  -o-transform: scale(3.2);
-  transform: scale(3.2);
-  left: 37%;
-}
-
-.hero .light .x8{
-  -webkit-animation: floatUp 4.7s infinite linear;
-  -moz-animation: floatUp 4.7s infinite linear;
-  -o-animation: floatUp 4.7s infinite linear;
-  animation: floatUp 4.7s infinite linear;
-  -webkit-transform: scale(1.7);
-  -moz-transform: scale(1.7);
-  -o-transform: scale(1.7);
-  transform: scale(1.7);
-  left: 62%;
-}
-
-.hero .light .x9{
-  -webkit-animation: floatUp 4.1s infinite linear;
-  -moz-animation: floatUp 4.1s infinite linear;
-  -o-animation: floatUp 4.1s infinite linear;
-  animation: floatUp 4.1s infinite linear;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
-  left: 85%;
-}
-
- @-webkit-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
- }
- @-moz-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
-@-o-keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
-@keyframes floatUp{
-  0%{top: 100vh; opacity: 0;}
-  25%{opacity: 1;}
-  50%{top: 0vh; opacity: .8;}
-  75%{opacity: 1;}
-  100%{top: -100vh; opacity: 0;}
-}
 /* .hero .img1{
   margin-bottom: 250px; */
   /* margin-left: 40%; */
@@ -2165,58 +2077,7 @@ section {
   
 }
 
-/* .hero .info h2:first-of-type {
-  opacity: 100%;
-  animation: showup 7s infinite ;
 
-}
-
-.hero .info h2:last-of-type{
-  width: 0px;
-  opacity: 100%;
-  animation: reveal 7s ;
-}
-
-.hero .info h2:last-of-type span{
-  opacity: 100%;
-  margin-left: -500px;
-  animation: slidein 7s ;
-} */
-
-/* @keyframes showup {
-  0% {opacity:1;}
-  20% {opacity:1;}
-  80% {opacity:1;}
-  100% {opacity:1;}
-}
-
-@keyframes slidein {
-  0% { margin-left:-700px; }
-  20% { margin-left:-800px; }
-  35% { margin-left:0px; }
-  100% { margin-left:0px; }
-}
-
-@keyframes reveal {
-  0% {opacity:1;width:0px;}
-  20% {opacity:1;width:0px;}
-  30% {width:500px;}
-  80% {opacity:1;}
-  100% {opacity:1;width:500px;}
-} */
-
-/*.hero .info h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: var(--color-primary);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}*/
 
 @media (max-width: 768px) {
   .hero .info h2 {
@@ -2227,6 +2088,7 @@ section {
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
+  font-family: var(--font-secondary);
 }
 
 .hero .info .btn-get-started {
@@ -2913,11 +2775,14 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/Footer-img.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 50px 0 40px 0;
   position: relative;
+  font-family: var(--font-secondary);
+  
+  
 }
 
 .footer:before {
@@ -2948,7 +2813,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   color: #fff;
 }
 
@@ -2963,6 +2828,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  font-family: var(--font-secondary);
 }
 
 .footer .footer-content .social-links a:hover {
@@ -2975,7 +2841,11 @@ section {
   font-weight: 600;
   color: #fff;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-left : 10px;
+  
 }
 
 .footer .footer-content .footer-links {
@@ -2984,8 +2854,8 @@ section {
 
 .footer .footer-content .footer-links ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 10px;
 }
 
 .footer .footer-content .footer-links ul li {
@@ -3001,6 +2871,8 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  width: 200px;
+  
 }
 
 .footer .footer-content .footer-links ul a:hover {
@@ -3016,9 +2888,22 @@ section {
   padding-top: 4px;
   font-size: 13px;
   color: #fff;
+  font-family: var(--font-secondary);
 }
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
+.footer .fullC{
+  display: flex;
+  
+}
+
+.footer .usefull1 , .usefull2{
+  width: 200px;
+  margin-left: 100px;
+}
+
+
 
