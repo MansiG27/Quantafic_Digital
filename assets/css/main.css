@@ -974,7 +974,7 @@ section {
   height: 250px;
   width: 250px;
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 30px;
   background-color:  #D3E8FD;
   
   
@@ -1353,6 +1353,9 @@ section {
 
 .about .class1{
   padding-left: 80px;
+}
+.about p{
+  font-size: 16px;
 }
 
 @media (min-width: 992px) {
@@ -2778,7 +2781,7 @@ section {
   background: url("../img/Footer-img.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 50px 0 40px 0;
+  padding: 40px 0 20px 0;
   position: relative;
   font-family: var(--font-secondary);
   
@@ -2793,7 +2796,7 @@ section {
 }
 
 .footer .footer-content .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .footer .footer-content .footer-info h3 {
@@ -2843,8 +2846,8 @@ section {
   position: relative;
   padding-bottom: 8px;
   padding-top: 5px;
-  padding-left: 10px;
-  margin-left : 10px;
+  
+  
   
 }
 
@@ -2854,13 +2857,11 @@ section {
 
 .footer .footer-content .footer-links ul {
   list-style: none;
-  padding: 10px;
-  margin: 10px;
+  /* padding: 10px;
+  margin: 10px; */
 }
 
-.footer .footer-content .footer-links ul li {
-  padding: 8px 0;
-}
+
 
 .footer .footer-content .footer-links ul li:first-child {
   padding-top: 0;
@@ -2880,7 +2881,7 @@ section {
 }
 
 .footer .footer-legal .copyright {
-  padding-top: 30px;
+  padding-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -2900,10 +2901,7 @@ section {
   
 }
 
-.footer .usefull1 , .usefull2{
-  width: 200px;
-  margin-left: 100px;
-}
+
 
 
 
