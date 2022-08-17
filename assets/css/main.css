@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/*@import '../node_modules/normalize.css/normalize.css';*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
@@ -2901,6 +2903,19 @@ section {
   
 }
 
+#consent-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 8rem;
+    background-color: #fff;
+    transition: opacity 1s ease;
+
+    &.hidden {
+        opacity: 0;
+    }
+}
 
 
 

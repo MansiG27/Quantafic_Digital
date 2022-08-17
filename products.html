@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Quantafic Digital Inc. - Service Details</title>
+  <title>Quantafic Digital Inc. - Products</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -57,28 +57,24 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="projects.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Offerings</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="about.html">Why Quantafic</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="projects.html">Products</a></li> -->
+          <!-- <li><a href="blog.html">Blog</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 
@@ -88,73 +84,118 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/risk.png');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/products.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Mobile Offerings</h2>
+        <h2>Products</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Service Details</li>
+          <li><a href="products.html">Products</a></li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Service Details Section ======= -->
-    <section id="service-details" class="service-details">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
 
-        <!-- <div class="row gy-4"> -->
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
-          <!-- <div class="col-lg-4">
-            <div class="solutions-list">
-              <a href="#" class="active">Remodeling</a>
-              <a href="#">Construction</a>
-              <a href="#">Product Management</a>
-              <a href="#">Repairs</a>
-              <a href="#">Design</a>
-            </div> -->
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-remodeling">Banking</li>
+            <li data-filter=".filter-construction">Analytics</li>
+            
+          </ul><!-- End Projects Filters -->
 
-            <!-- <h5>The lending function of banks have a continuous task of optimizing their policy <br>and processes to reduce the credit costs. These credit costs are incurred due to :</h5>
-            <p>1) Bad Credit decision;<br>
-              2) Inability of borrower to pay;<br>
-              3) Inability to collect from borrower;<br>
-              4) Borrower not intending to pay</p> -->
-          <!-- </div> -->
+          <div class="row g-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-12 " data-aos="fa-arrow-up-from-ground-water" data-aos-delay="50" >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100 shadow-lg rounded-2" >
+                <img src="assets/img/QCAM 1.png" class="img-fluid" alt=""  >
+                <div class="portfolio-info">
+                  <p><h3> Q-Cam </h3></p>
+                  <a href="assets/img/QCAM 1.png" title="Q-CAM" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="qcam.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> 
+                </div>
+                <p> Q-Cam</p>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100 shadow-lg rounded-2">
+                <img src="assets/img/verifyyy 1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <!-- <h4>Construction 1</h4> -->
+                  <p><h3> Q-Verifi </h3></p>
+                  <a href="assets/img/verifyyy 1.png" title="Q-Verifi" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="qverifi.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                  <p>Q-Verifi</p>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100 shadow-lg rounded-2">
+                <img src="assets/img/multibureau 1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <!-- <h4>Design 1</h4> -->
+                  <p><h3> Q-Connect </h3></p>
+                  <a href="assets/img/multibureau 1.png" title="Q-Connect" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="qconnect.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <p>Q-Connect</p>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100 shadow-lg rounded-2">
+                <img src="assets/img/mandate1 1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <!-- <h4>Repairs 1</h4> -->
+                  <p><h3> Q-Mandate </h3></p>
+                  <a href="assets/img/mandate1 1.png" title="Q-Mandate" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="qmandate.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <p>Q-Mandate</p>
+              </div>
+            </div><!-- End Projects Item -->
+
+                  <!-- <h4>Repairs 1</h4> -->
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100 shadow-lg rounded-2">
+                <img src="assets/img/Rule engine.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p><h3> Q-Rulez </h3></p>
+                  <a href="assets/img/Rule engine.jpg" title="Q-Rulez" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <p>Q-Rulez</p>
+              </div>
+            </div> --><!-- End Projects Item -->
+
+                  <!-- <h4>Repairs 1</h4> -->
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100 shadow-lg rounded-2">
+                <img src="assets/img/Multibureau.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <p><h3> OCR </h3></p>
+                  <a href="assets/img/Multibureau.png" title="OCR" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <p>OCR</p>
+              </div>
+            </div> --><!-- End Projects Item -->
+
             
-            <!-- <img src="assets/img/risk.png" alt="" class="img-fluid solutions-img" >
-            <img src="assets/img/fraud.png" alt="" class="img-fluid solutions-img"> -->
-          
-            <!-- <h3>At Quantafic, we have been heping banks and NBFCs in these areas through the following solutions and products:</h3> -->
-            <div class="para">
-            <p>
-              Ensuring effortless adaptation of complex processes by providing user-centric solutions, based on native as well as cross-platform applications.
-            </p>
-            
-            <p>
-              Maximize value addition by Integrating with modern technologies to monitor device location, process the captured images to extract information, etc.
-            </p>
-            <p>
-              Addressing the integrity of solutions, we ensure that the web applications are completely synchronized with the mobile application
-            </p>
-            <p>
-              We are here with a stack of modern authentication techniques, making sure the critical applications are accessible only by legitimate users.
-            </p>
-            <p>
-              Ensuring operation in no-connectivity areas; our solutions, which can be used in offline mode, are equipped with data synchronization capabilities to update data on servers whenever the device is online.
-            </p>
-           
-            </div>
-            
-            
-          </div>
+
+          </div><!-- End Projects Container -->
 
         </div>
 
-      
-    </section><!-- End Service Details Section -->
+      </div>
+    </section><!-- End Our Projects Section -->
 
   </main><!-- End #main -->
 
