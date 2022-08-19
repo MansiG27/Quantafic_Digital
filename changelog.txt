@@ -8,3 +8,7 @@ Version: 1.0.1
 
 Version: 1.0.0
   - Initial Release
+
+13-08-2022 
+Made changes in etc/httpd/conf.d/welcome.conf Directory Tag path changes from html to quantaficdigital.ca line 13
+Made changes in etc/httpd/conf/httpd.conf line 122 and 136
