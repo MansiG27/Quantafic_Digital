@@ -39,12 +39,12 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-    #captchaBackground {
+    /*#captchaBackground {
         background-color: #2d3748;
     }
     #captchaHeading {
         color: white;
-    }
+    }*/
     #captcha {
         height: 75%;
         width: 80%;
@@ -63,7 +63,7 @@
         color: #FF0000;
     }
     .correctCaptcha {
-        color: #7FFF00;
+        color: #00ff00;
     }
     </style>
 </head>
@@ -85,12 +85,25 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="projects.html">Products</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Offerings</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="about.html">Why Quantafic</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Recognition</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html" class="active">Contact</a></li>
+          <!-- <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="projects.html">Products</a></li> -->
+          <!-- <li><a href="blog.html">Blog</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 
@@ -160,12 +173,12 @@
                 </div>
               </div>
               <div class="row gy-4">
-              <div class="col-lg-6 form-group">
-                <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10" required>
-              </div>
-              <div class="col-lg-6 form-group">
-                <input type="text" class="form-control" name="company_name" id="company_name" placeholder="Company Name" required>
-              </div>
+                <div class="col-lg-6 form-group">
+                  <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" name="company_name" id="company_name" placeholder="Company Name" required>
+                </div>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
@@ -174,14 +187,15 @@
                 <textarea class="form-control" name="msg" id="msg" rows="5" placeholder="Message" maxlength="5" required></textarea>
               </div>
               <div class="row gy-4">
-                <div class="col-lg-6 form-group">
+                
+              </div>
+              <div class="col-lg-6 form-group">
                   <canvas id="captcha" name="captcha">captcha text</canvas>
                 </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" name="textBox" id="textBox" placeholder="Enter captcha" required>
-                </div>
                 <span id="output"></span>
-                </div>
+              <div class="col-lg-6 form-group">
+                <input type="text" class="form-control" name="textBox" id="textBox" placeholder="Enter captcha" required>
+              </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
