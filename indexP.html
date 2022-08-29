@@ -18,7 +18,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -104,59 +104,159 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
-    <div class="info flex-column">
-
+    <div class="info d-flex align-items-center">
       <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-11 text-center">
-              <h3> Digital Application Expert for Financial Sector </h3>
+          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div><h2>Quantafic <span>Digital</span></h2>
+            
+            
             </div>
-            <!-- <div class="col-lg-10 mt-5">
-                <div class="word">
-                  <div id="Digitalisation"> <a href="#">Digitalisation</a> </div>
-                  <div id="ProcessAutomation" > <a href="solutions.html" style=" color: #021888;">ProcessAutomation</a> </div>
-                  <div id="BFSI">BFSI </div>                          
-                  <div id="MachineLearning">MachineLearning </div>   
-                  <div id="Automation">Automation</div> 
-                  <div id="DataAnalytics">DataAnalytics</div>  
-                  <div id="MobileApplications">MobileApplications</div> 
-                  <div id="AI">AI</div>        
-                  <div id="Banking">Banking</div>                       
-                  <div id="Healthcare">Health care</div>          
-                  <div id="CustomDevelopment">CustomDevelopment</div>
-                  <div id="OCR-Masking">OCR</div>
-                </div>
-            </div> -->
-     
-          <!-- <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="600"> -->
-            <!-- <div><h3>Digital Application Expert <span>for Financial Sector</span></h3></div> -->
+       
+            <!-- <a data-aos="fade-up" data-aos-delay="200" href="#get-started"  ><i class="bi bi-arrow-down-circle-fill fa-3x" ></i></a> -->
+            </div><!--col-->
             </div><!--row-->
-            </div><!--container-->
+      </div><!-- container  -->
+    </div><!-- info  -->
 
-            <!-- text and button -->
-            <div class="col-lg-5 d-flex m-4">
-                <img src="assets/img/old businessman in glasses standing giving thumbs up.png" alt="" height="35%" width="35%">
-                <div class="col-lg-9 flex-column mt-5 p-5">
-                    <p>Learn How <b>Quantafic</b>  Helping <br> Other Financial Institutes!</p>
-                    <a class="btn btn-primary" href="#solutions" role="button">Case Studies</a>
-                </div>
-                
-            </div>
-
-          </div><!-- info  -->
+    
+      
+    
+    <div id = tsparticles></div>
+      <script>
+        tsParticles.load('tsparticles');
+      </script> 
+          <script>
+            const particles = {
+              "fpsLimit": 60,
+              "particles": {
+                "number": {
+                  "value": 80,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#ff0000",
+                  "animation": {
+                    "enable": true,
+                    "speed": 20,
+                    "sync": true
+                  }
+                },
+                "shape": {
+                  "type": "circle",
+                  "stroke": {
+                    "width": 0
+                  },
+                  "polygon": {
+                    "nb_sides": 5
+                  },
+                  "image" : {
+                    "src" : ""
+                  }
+                },
+                "opacity": {
+                  "value": 0.5,
+                  "random": false,
+                  "anim": {
+                    "enable": false,
+                    "speed": 3,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 3,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 20,
+                    "size_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "links": {
+                  "enable": true,
+                  "distance": 100,
+                  "color": "#ffffff",
+                  "opacity": 0.4,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 6,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 0.8
+                  },
+                  "repulse": {
+                    "distance": 200
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true,
+              "background": {
+                "color": "#000B43",
+                "image": "",
+                "position": "50% 50%",
+                "repeat": "no-repeat",
+                "size": "cover"
+              }
+            };
+          
+            tsParticles.load('tsparticles', particles);
+          </script>
         
 
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
-        
+    
+      <!-- <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500"> -->
        
-
-
-
-        <div class="carousel-item active" style="background-image: url(assets/img/Desk_design3.png)"></div>
-       <!-- <div class="carousel-item active" style="background-color: #212C64;"></div> -->
+        <!-- <div class="carousel-item active" style="background-image: url(assets/img/Neurons.jpg)"></div> -->
+       <!-- <div class="carousel-item active" style="background-color: #212C64;"></div>
        
      
-      </div>
+      </div> -->
     
   
   </section><!-- End Hero Section -->
@@ -182,7 +282,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">Rapid Development Capability</h4> -->
                     <h4 class="card-title">Products</h4>
-                    <p>Off the shelf products for your digitalisation needs.</p>
+                    <p>Highly skilled software developers known for rapid software development.</p>
                   </div>
                 </div>
               </div>
@@ -199,7 +299,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">Advanced Analytics Expertise</h4> -->
                     <h4 class="card-title">Process Automation</h4>
-                    <p>Ready components for quick process automation</p>
+                    <p>Our team has 2 decades of experience in predictive analytics and modelling.</p>
                   </div>
                 </div>
               </div>
@@ -218,7 +318,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">Wealth Of Knowledge</h4> -->
                     <h4 class="card-title">Resource Augmentation</h4>
-                    <p>Skilled resources to support your inhouse teams</p>
+                    <p>Solid foundation with skills ranging from business domain to technical expertise.</p>
                   </div>
                 </div>
               </div>
@@ -235,7 +335,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">High Skilled Resources</h4> -->
                     <h4 class="card-title">Data Analytics</h4>
-                    <p>Predictive models, Dashboard, Reports and other data analytic techniques for Data Driven Decision making</p>
+                    <p>Resource augmentation solutions for Analytics, BI, Visualization, Software development</p>
                   </div>
                 </div>
               </div>
@@ -254,7 +354,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">Solid Support</h4> -->
                     <h4 class="card-title">Data Analytics as Services</h4>
-                    <p>Software development, Analytical solutions are backed by 100% support.</p>
+                    <p>Software development, Analytical solutions are backed by 100% round-the-year support.</p>
                   </div>
                 </div>
               </div>
@@ -271,7 +371,7 @@
                   <div class="card-body">
                     <!-- <h4 class="card-title">Research/Innovation Mindset</h4> -->
                     <h4 class="card-title">OCR/Masking</h4>
-                    <p>Machine learning led OCR to Capture details from any form of Image and avoid manual data entry.</p>
+                    <p>Perpetual research on new analytical techniques and software technologies.</p>
                   </div>
                 </div>
               </div>
@@ -376,112 +476,14 @@
                 <!-- <p>Quantafic expertise of developing Mobile applications(Native and Hybrid) as well as Web applications. This will be added advantage in automation journey. Also we can help in augmenting your team by providing resources around technologies. </p> -->
               </div>
            
-              <div class="row gy-4">
+        
 
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                      <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                    </div>
-                    <h3>Digital Customer Onboarding</h3>
-                    <!-- <p>Quantafic expertise in developing iOS/ Android or Hybrid mobile applications will be added advantage in the automation journey. </p> -->
-                    <a href="mobile-offerings.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                            <div class="service-item position-relative rounded-2">
-                              <div class="sol-content bg-light rounded-2">
-                                <div class="icon">
-                                <i class="fa-solid fa-helmet-safety"></i>
-                              </div>
-                              <h3>Empowering Business Teams</h3>
-                              <!-- <p>Quantafic offers custom software-development for Banks and NBFCs.</p> -->
-                              <a href="software-development.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                              </div>
-                              
-                            </div>
-                          </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="service-item  position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                        <i class="fa-solid fa-mountain-city"></i>
-                        </div>
-                        <h3>Risk, Fraud, Collection Analytics</h3>
-                        <!-- <p>At Quantafic, we have been helping banks and NBFCs in these areas through the sampling models for a sharper sampling of loan applications.</p> -->
-                        <a href="risk-analytics.html" class="readmore stretched-link">Learn more <i class="bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2 ">
-                      <div class="icon">
-                        <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                          </div>
-                            <h3>Empowering Business Teams</h3>
-                              <!-- <p>Quantafic team has been extensively supporting a variety of marketing campaigns for well-known banks. Whether it be asset products, liability products etc.</p> -->
-                            <a href="marketing.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                                    
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                      <i class="fa-solid fa-compass-drafting"></i>
-                    </div>
-                    <h3>Quicker TAT</h3>
-                    <!-- <p>Never is a managers team adequate. Either by skills, or by count, it is rare to have your team strength and skills just right. </p> -->
-                    <a href="resource-augmentation.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-               
-              
-                
-              
-                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                      <i class="fa-solid fa-trowel-bricks"></i>
-                    </div>
-                    <h3>Optimize Bureau Spend<</h3>
-                    <!-- <p>Data Analytics is a new buzzword of the decade, with many more related words like artificial intelligence, machine learning, chat-bots, etc.</p> -->
-                    <a href="training.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-              
-            </div>
-              
-          </div>
-        </section><!-- End solutions Section -->
-
-
-
-
-        <!-- <div class="row gy-4">
+        <div class="row gy-4">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Digital Customer Onboarding</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%" >
+                <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div>
 
@@ -504,7 +506,7 @@
             <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Quicker TAT</h4> 
-                 <img src="assets/img/case1.png" height="20%" width="20%" style="margin-left: 190px;">
+                <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div>
           </div>
@@ -513,33 +515,33 @@
             <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Optimize Bureau Spend</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%" style="margin-left: 60px;" >
+                <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div>
 
             <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Multi API Integration</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%"  style="margin-left: 100px;" >
+                <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div>
           </div>
            
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 m-3">
+            <!-- <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Multi API Integration</h4> 
                 <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div> -->
 
-            <!-- <div class="col-lg-5 m-3">
+            <div class="col-lg-5 m-3">
               <div class="d-flex border p-3 shadow">
                 <h4>Process Automation coupled with data Analytics</h4> 
                 <img src="assets/img/case1.png" height="20%" width="20%">
               </div>
             </div>
-          </div> --> -->
+          </div>
           <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative rounded-2">
               <div class="sol-content bg-light rounded-2">
@@ -625,7 +627,6 @@
 
       </div>
     </section><!-- End solutions Section -->
-
 
     
 

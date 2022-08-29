@@ -7,6 +7,7 @@
 
 /*@import '../node_modules/normalize.css/normalize.css';*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
@@ -66,8 +67,8 @@ h6 {
 section {
   padding: 80px 0;
   overflow: hidden;
-  
- 
+
+
 }
 
 
@@ -77,10 +78,10 @@ section {
 }
 
 .section-header {
-  
+
   text-align: center;
   padding-bottom: 70px;
-  
+
 }
 
 .section-header h2 {
@@ -110,14 +111,14 @@ section {
 
 .section-header p {
   margin: 0 auto 0 auto;
-  
+
 }
 
-.header{
-  
+.header {
+
   background-color: #D3E8FD;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
-  
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
 }
 
 
@@ -338,7 +339,7 @@ section {
     font-size: 14px;
     font-weight: 500;
     color: var(--color-secondary);
-    
+
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -433,7 +434,7 @@ section {
     left: 100%;
     visibility: visible;
   }
-  
+
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -751,7 +752,7 @@ section {
 # solutions Section
 --------------------------------------------------------------*/
 
-.solutions .sol-img img{
+.solutions .img {
   width: 20%;
   height: 20%;
   
@@ -762,18 +763,18 @@ section {
   background-image: url(../img/solutions-bg1.png);
   width: fit-content;
   margin-left: 50px;
-  
+
   box-shadow: 5px 5px 10px grey;
-  
+
 }
 
 
-.solutions .service-item .sol-content{
+.solutions .service-item .sol-content {
   margin-left: 10px;
   width: 256px;
   height: 360px;
-   padding: 10px;
-   box-shadow: 5px 5px 10px rgb(8, 0, 53);
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgb(8, 0, 53);
 }
 
 .solutions .service-item .icon {
@@ -837,6 +838,19 @@ section {
 .solutions .service-item:hover h3 {
   border-color: var(--color-primary);
 }
+
+/*--------------------------------------------------------------
+# Process Augmentation Section
+--------------------------------------------------------------*/
+.process .process-item .img{
+  height: 10%;
+  width: 10%;
+}
+.process .process-item{
+  padding: 10px;
+  width: 50%
+}
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -977,9 +991,9 @@ section {
   width: 250px;
   padding: 10px;
   margin-left: 30px;
-  background-color:  #D3E8FD;
-  
-  
+  background-color: #D3E8FD;
+
+
 }
 
 .projects .portfolio-content p {
@@ -1057,7 +1071,7 @@ section {
   transform: scale(1.1);
 }
 
-.projects .portfolio-content .portfolio-info h3{
+.projects .portfolio-content .portfolio-info h3 {
   color: white;
 }
 
@@ -1339,24 +1353,28 @@ section {
   background-position: center;
 }
 
-.about .para{
+.about .para {
   font-family: var(--font-secondary);
 }
-.about .para1{
+
+.about .para1 {
   display: flex;
   font-family: var(--font-secondary);
 }
-.about .para2{
-  padding-left: 50px;
-}
-.about .para3{
+
+.about .para2 {
   padding-left: 50px;
 }
 
-.about .class1{
+.about .para3 {
+  padding-left: 50px;
+}
+
+.about .class1 {
   padding-left: 80px;
 }
-.about p{
+
+.about p {
   font-size: 16px;
 }
 
@@ -1687,9 +1705,10 @@ section {
   margin-bottom: 20px;
 }
 
-.service-details{
+.service-details {
   padding: 50PX;
 }
+
 .service-details .solutions-list a {
   display: block;
   line-height: 1;
@@ -1710,7 +1729,7 @@ section {
 }
 
 .service-details .solutions-img {
-  
+
   margin-left: 150px;
   padding: 20px;
   height: 30%;
@@ -1726,7 +1745,7 @@ section {
 }
 
 .service-details h4 {
-  
+
   font-size: 20px;
   font-weight: 700;
 }
@@ -1736,15 +1755,15 @@ section {
 }
 
 .service-details p {
-  
+
   margin: 8px;
   font-size: 15px;
   font-family: var(--font-secondary);
-  
+
 }
 
-.service-details .para{
-  
+.service-details .para {
+
   padding-left: 50px;
   text-align: left;
   font-family: var(--font-secondary);
@@ -1980,20 +1999,122 @@ section {
 --------------------------------------------------------------*/
 .hero {
   overflow-x: hidden;
-  padding: 0;
-  height: 95vh;
+  padding: 0px;
+  height: 100vh;
   
+}
+
+.word{
+  /* center content */
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap:5px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: none;
+
+  grid-template:  '. . . DataAnalytics MachineLearning MachineLearning MachineLearning MachineLearning' 
+                  'ProcessAutomation ProcessAutomation ProcessAutomation DataAnalytics Automation Banking OCR-Masking MobileApplications'  
+                  '. CustomDevelopment BFSI DataAnalytics Digitalisation Banking OCR-Masking AI'
+                  '. . BFSI DataAnalytics Digitalisation Banking OCR-Masking AI'
+                  '. . BFSI DataAnalytics Healthcare Banking OCR-Masking AI'
+                  '. . . DataAnalytics . . OCR-Masking .'
+          
+}
+.word.id:hover
+{
+}
+word>div{
+  color: var(--color-secondary);
+}
+.word:nth-child(1n){
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+
+}
+/* twice the size, bold and different color for each second word */
+.word :nth-child(2n) {
+  font-size: 2rem;
+  color: #021888;
+  font-weight: bold;
+}
+/* vertical orientation and different color for each third word */
+.word :nth-child(3n){
+  font-size: 2rem;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  color: var(--color-secondary);
+}
+.word :nth-child(4n){
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+.word:nth-child(5n){
+  font-size: 4rem;
+  color: var(--color-secondary)
+}
+
+
+/* define grid area */
+#Digitalisation{
+  grid-area: Digitalisation;
+}
+#ProcessAutomation{
+  grid-area: ProcessAutomation;
+}
+#MobileApplications{
+  grid-area: MobileApplications;
+}
+#MachineLearning{
+  grid-area: MachineLearning;
+}
+#AI{
+  grid-area: AI;
+}
+#Automation{
+  grid-area: Automation;
+}
+#CustomDevelopment{
+  grid-area: CustomDevelopment;
+}
+#Healthcare{
+  grid-area: Healthcare;
+}
+#OCR-Masking{
+  grid-area: OCR-Masking;
+}
+#DataAnalytics{
+  grid-area: DataAnalytics;
+}
+#Banking{
+  grid-area: Banking;
+}
+#BFSI{
+  grid-area: BFSI;
+}
+
+/* .tagcloud{
+  display: contents;
+  top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+} */
+/* hover of tagcoud */
+.tagcloud--item:hover{
+  color:#169BD6;
 }
 
 .hero .carousel {
   width: 100%;
-  min-height: 80vh;
-  padding: 80px 0;
-  margin: 0;
+  min-height: 90vh;
+  padding: 60px 10px;
+  margin: 70px 0px 0px 0px;
   position: relative;
 }
 
 .hero .carousel-item {
+
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -2006,34 +2127,24 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 38, 73, 0.5);
+  /* background-color: rgba(0, 38, 73, 0.5); */
   position: absolute;
   inset: 0;
 }
 
 
- #tsparticles{
+#tsparticles {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   background-color: #000B43;
-  
-  
+
+
 }
 
 
 
-/* Background image */
-/* .hero .carousel-item{
-  
-  animation: 1s polygon reverse;
-  animation: 1s polygon;
-  
-} */
-/* @keyframes polygon {
-  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
-  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
-}  */
+
 
 .hero .info {
   position: absolute;
@@ -2042,26 +2153,6 @@ section {
 }
 
 
-/* .hero .img1{
-  margin-bottom: 250px; */
-  /* margin-left: 40%; */
-  /* opacity: 0%; */
-  /* animation: curve 4s ;
-} */
-/* @keyframes curve {
-  0%{opacity: 0%; margin-left: 400px;}
-}  */
-
-
-/* .hero .img1 { 
-  
-  animation: 0s polygon reverse infinite;
- }
-.hero .img1 { animation: 8s polygon infinite; }
-@keyframes polygon {
-  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
-  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
-} */
 
 @media (max-width: 768px) {
   .hero .info {
@@ -2069,17 +2160,17 @@ section {
   }
 }
 
-.hero .info h2 {
-  color: #fff;
-  margin-top: 90px;
+.hero .info h3 {
+  color: #212C64;
+  margin-top: 110px;
   /* padding-bottom: 10px; */
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 46px;
+  font-weight: 900;
   position: relative;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  
+
 }
 
 
@@ -2091,9 +2182,13 @@ section {
 }
 
 .hero .info p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
   font-family: var(--font-secondary);
+}
+
+.hero .info .btn{
+  background-color: #212C64;
 }
 
 .hero .info .btn-get-started {
@@ -2114,40 +2209,44 @@ section {
   background: var(--color-primary);
 }
 
-.hero .info .bi:hover{
+.hero .info .bi:hover {
   color: #D3E8FD;
-  
+
 }
 
-.hero .info .bi{
+.hero .info .bi {
   position: absolute;
   /* top: calc(100vh - 98px); */
   left: calc(50% - 30px);
   width: 0px;
   height: 40px;
- 
+
 }
 
-.hero .info .bi::after{
+.hero .info .bi::after {
   content: " ";
   position: absolute;
-  top : 12px;
+  top: 12px;
   left: -10px;
   transform: rotateZ(45deg);
 
 }
-@keyframes jumpInfinte{
-  0%{
+
+@keyframes jumpInfinte {
+  0% {
     margin-top: 0;
   }
-  50%{
+
+  50% {
     margin-top: 20px;
   }
-  100%{
+
+  100% {
     margin-top: 0;
   }
 }
-.hero .info .bi{
+
+.hero .info .bi {
   animation: jumpInfinte 1.5s infinite;
 }
 
@@ -2786,8 +2885,8 @@ section {
   padding: 40px 0 20px 0;
   position: relative;
   font-family: var(--font-secondary);
-  
-  
+
+
 }
 
 .footer:before {
@@ -2848,9 +2947,9 @@ section {
   position: relative;
   padding-bottom: 8px;
   padding-top: 5px;
-  
-  
-  
+
+
+
 }
 
 .footer .footer-content .footer-links {
@@ -2875,7 +2974,7 @@ section {
   display: inline-block;
   line-height: 1;
   width: 200px;
-  
+
 }
 
 .footer .footer-content .footer-links ul a:hover {
@@ -2898,25 +2997,19 @@ section {
   color: var(--color-primary);
 }
 
-.footer .fullC{
+.footer .fullC {
   display: flex;
-  
+
 }
 
 #consent-popup {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem 8rem;
-    background-color: #fff;
-    transition: opacity 1s ease;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 8rem;
+  background-color: #fff;
+  transition: opacity 1s ease;
 
-    &.hidden {
-        opacity: 0;
-    }
+
 }
-
-
-
-
