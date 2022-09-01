@@ -27,9 +27,9 @@ try {
   $mail->mobile = $_POST['mobile'];
 
   //Recipients Details
-  $mail->setFrom('tersepratham0493@gmail.com');
+  $mail->setFrom('your@email.com');
   $mail->addAddress($mail->from_email); 
-  $mail->addReplyTo('tersepratham0493@gmail.com', 'Information');
+  $mail->addReplyTo('your@email.com', 'Information');
   // $mail->addCC('cc@example.com');
   // $mail->addBCC('bcc@example.com');
 
