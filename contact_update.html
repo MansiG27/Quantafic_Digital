@@ -39,31 +39,39 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-    /*#captchaBackground {
+    /* #captchaBackground {
         background-color: #2d3748;
     }
     #captchaHeading {
         color: white;
-    }*/
-    #captcha {
-        height: 75%;
-        width: 80%;
-        font-size: 50px;
+    } */
+     #captcha {
         letter-spacing: 2px;
         margin: auto;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #2d3748;
-    }
+        display: block;     
+    } 
 
     .incorrectCaptcha {
         color: #FF0000;
     }
     .correctCaptcha {
-        color: #00ff00;
+        color: #7FFF00;
+    }
+    .btn {
+    /* background-color: DodgerBlue; Blue background */
+    border: none;
+    color: dodgerblue; 
+    padding: 10px 16px;
+    font-size: 15px;
+    /* margin-top: 40px; */
+    }
+    .btn:hover{
+      /* background-color: white; */
+      color: dodgerblue;
+    }
+    #contact_form  .error {
+    color: #F00;
+    
     }
     </style>
 </head>
@@ -88,7 +96,7 @@
           <li class="dropdown"><a href="#"><span>Offerings</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="products.html">Products</a></li>
-              <li><a href="solutions.html">Process Automation</a></li>
+              <li><a href="process-automation.html">Process Automation</a></li>
               <li><a href="#">Resource Augmentation</a></li>
               <li><a href="#">Mobile Applications</a></li>
               <li><a href="#">Data Analytics</a></li>
@@ -99,17 +107,13 @@
             <ul>
               <li><a href="whyQ.html">Why Quantafic</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Teams</a></li>
+              <li><a href="teams.html">Teams</a></li>
               <li><a href="#">Partners</a></li>
               <li><a href="#">Recognition</a></li>
               <li><a href="gallery.html">Gallery</a></li>
             </ul>
           </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <!-- <li><a href="about.html">About</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="projects.html">Products</a></li> -->
-          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li><a href="contact_update.html" class="active">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -169,51 +173,52 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form method="post" class="php-email-form" id="contact_form">
+            <form method="post" class="php-email-form" id="contact_form" name="contact_form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input  type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input  type="text" name="name" class="form-control" id="name" placeholder="Your Name">
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                 </div>
               </div>
               <div class="row gy-4">
-                <div class="col-lg-6 form-group">
-                  <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" maxlength="10" required>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" name="company_name" id="company_name" placeholder="Company Name" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="msg" id="msg" rows="5" placeholder="Message" maxlength="5" required></textarea>
-              </div>
-              <div class="row gy-4">
-                
+              <div class="col-lg-6 form-group">
+                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number">
               </div>
               <div class="col-lg-6 form-group">
-                  <canvas id="captcha" name="captcha">captcha text</canvas>
+                <input type="text" class="form-control" name="company_name" id="company_name" placeholder="Company Name" >
+              </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="msg" id="msg" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="row gy-6">
+                <div class="col-lg-4 form-group">
+                  <canvas id="captcha" name="captcha" width="170" height="40" style="border:1px solid #000000;text-align: center;padding: 0;margin: 0;">captcha text</canvas>
+                </div>
+                <div class="col-lg-2 form-group">
+                  <button class="btn" name="refreshButton" id="refreshButton" style="margin:auto;"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-lg-5 form-group">
+                  <input type="text" class="form-control" name="textBox" id="textBox" placeholder="Enter captcha" required>
                 </div>
                 <span id="output"></span>
-              <div class="col-lg-6 form-group">
-                <input type="text" class="form-control" name="textBox" id="textBox" placeholder="Enter captcha" required>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
+                <span id="success" class="text-success"></span>
               </div>
               <div class="text-center" id="buttons">
-                <button type="submit" name="refreshButton" id="refreshButton">Refresh</button>
                  <button type="submit" name="send_message_btn" id="submitButton">Send Message</button>
-                </div>
+              </div>
             </form>
           </div><!-- End Contact Form -->
-
         </div>
 
       </div>
@@ -223,10 +228,8 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
     <div class="footer-content position-relative">
        <div class="container">
-        
          <div class="row">
               <div class="fullC">
                 <div class="col-lg-4 col-md-6">
@@ -239,29 +242,20 @@
                           
                       </div>
                     </div><!-- End footer info column-->
-    
-                  
-
                    <div class="col-lg-6 d-flex">
                       <div class="col-md-5 col-md-5 footer-links">
                           <h4 style="margin-left:33px ;">Useful Links</h4>
                           <ul>
-                          <!-- <li><a href="#">Home</a></li>
-                          <li><a href="about.html">About us</a></li>
-                          <li><a href="solutions.html">Solutions</a></li> -->
                           <li><a href="#">Terms of service</a></li>
                           <li><a href="#">Privacy policy</a></li>
                           </ul>
                        </div><!-- End footer links column-->
                       <div class="col-md-6 col-md-5 footer-links">
-                          <h4 >Contact Us</h4>
-                                                                
+                          <h4 >Contact Us</h4>                                    
                           <p>
                             <strong>Phone:</strong> +1(647) 949 9745<br>
-                            <strong>Email:</strong> contact@quantafic.com<br>
-                            
-                          </p>
-                                                                
+                            <strong>Email:</strong> contact@quantafic.com<br> 
+                          </p>                                         
                       </div>
                       <div class="social-links d-flex my-5 mt-3">
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
@@ -269,17 +263,11 @@
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                         <a href="https://www.linkedin.com/mwlite/company/quantafic-business-solutions-llp" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
                         </div>
-
                    </div>
-                </div>
-                     
+                </div>          
           </div>
-        </div>  
-           
-    </div>
-    
-  
-    
+        </div>     
+      </div>  
     <div class="footer-legal text-center position-relative">
     <div class="container">
     <div class="copyright">
@@ -308,11 +296,16 @@
   <script src="assets/js/main.js"></script>
 <!----Validation of Contact form-->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- <script type="text/javascript" src="C:/xampp/htdocs/Quantafic_Digital_Inc-main/jquery/jquery-1.11.0.min.js"></script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+ <!--Captcha Generation -->
 <script>
 let captchaText = document.querySelector('#captcha');
 var ctx = captchaText.getContext("2d");
-ctx.font = "30px Roboto";
-ctx.fillStyle = "#08e5ff";
+ctx.font = "20px Roboto";
+ctx.margin = "0px";
+ctx.fillStyle = "black";
 
 let userText = document.querySelector('#textBox');
 let submitButton = document.querySelector('#submitButton');
@@ -337,13 +330,79 @@ userText.addEventListener('keyup', function(e) {
 
         } else {
             output.classList.add("incorrectCaptcha");
-            output.innerHTML = "Incorrect Captcha, Please try again";
+            output.innerHTML = "Incorrect Captcha, please try again";
         }
     }
 });
+
+/Form Field Validation/
+$(function() {
+  $("form[name='contact_form']").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      msg: {
+        required: true,
+        minlength: 5,
+        maxlength:200
+      },
+      company_name:'required',
+      subject:'required',
+      textBox:'required',
+      mobile:{
+        required:true,
+        number: true,
+        minlength: 10,
+        maxlength: 10,
+      }
+    },
+    messages: {
+      name: {
+        required: "Please enter your Name",
+        minlength: "Your Name must be at least 3 characters long"
+      },
+      msg: {
+        required: "Please provide a Message",
+        minlength: "Your Message must be at least 5 characters long",
+        maxlength: "Your Message must be at less than 200 characters"
+      },
+      email: "Please enter a valid email address",
+      company_name: "Please enter your Company Name ",
+      subject: "Please enter your Subject",
+      textBox: "Please enter Captcha",
+      mobile:{
+        required: "Please provide a Valid Phone Number",
+        number: "Please enter Only digits",
+        minlength: "Your Phone Number must be at least 10 digit long",
+        maxlength: "Your Phone Number must be at max 10 digit long",
+      }
+    },
+    submitHandler: function(form) {
+      form.submit();
+    },
+    errorPlacement: function (error, element) { 
+    element.css('color', 'black'); 
+    error.css('font-size', '12px'); 
+    error.css('color', 'red'); 
+    error.insertAfter(element); 
+    }
+  });
+});
+/*End of Form Field Validation*/
+
+/*Form Submit Button*/
 submitButton.addEventListener('click', function() {
   var msg = $('#msg').val();
     if (userText.value === c) {
+      $("#contact_form").validate();
+     console.log($("#contact_form").valid());
+      event.preventDefault();
         output.classList.add("correctCaptcha");
         // output.innerHTML = "Correct!";
         var formElements=document.getElementById("contact_form").elements; 
@@ -354,26 +413,50 @@ submitButton.addEventListener('click', function() {
         company_name: formElements[3].value,
         subject: formElements[4].value,
         msg: msg,
-        
         }
-        console.log(postData);
-        var url = "con1.php";
+        $('#success_message').show();
+        $('#success_message h2').text('Processing, wait please...');
+        $('#submit_cf').attr('disabled','disabled');
+        var url = "contact_update.php";
         $.ajax({
             type: "POST",
             url: url,
             data:postData,
-           success: function (data) {
-            console.log(data);
+           success: function (response) {
+          //   console.log(response);
+          // alert(response);
+            if (response !== ' ') {
+              $('#success').fadeIn().html(JSON.parse(response));
+              setTimeout(function function_name() {
+                  $('#success').fadeOut('slow');
+              }, 3000);
+            }
+            else{
+              $('#success').fadeIn().html('Mail has not been sent');
+              $("#success").css("color","red");
+            }
            }
         });
+        $('#contact_form').trigger("reset");
+          userText.value = "";
+          let refreshArr = [];
+          for (let j = 1; j <= 7; j++) {
+          refreshArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+          }
+          ctx.clearRect(0, 0, captchaText.width, captchaText.height);
+          c = refreshArr.join('');
+          ctx.fillText(refreshArr.join(''),captchaText.width/4, captchaText.height/2);
+          output.innerHTML = "";
         return false;
     } else {
       event.preventDefault();
         output.classList.add("incorrectCaptcha");
-        output.innerHTML = "Incorrect Captcha, Please try again";  
+        output.innerHTML = "Incorrect Captcha, please try again";  
         }
+      
 });
 refreshButton.addEventListener('click', function() {
+  event.preventDefault();
     userText.value = "";
     let refreshArr = [];
     for (let j = 1; j <= 7; j++) {
