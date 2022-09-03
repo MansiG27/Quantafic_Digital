@@ -215,7 +215,7 @@
                 <span id="success" class="text-success"></span>
               </div>
               <div class="text-center" id="buttons">
-                 <button type="submit" name="send_message_btn" id="submitButton">Send Message</button>
+                 <button type="submit" name="send_message_btn" id="submitButton" disabled>Send Message</button>
               </div>
             </form>
           </div><!-- End Contact Form -->
@@ -335,7 +335,7 @@ userText.addEventListener('keyup', function(e) {
     }
 });
 
-/Form Field Validation/
+/*Form Field Validation*/
 $(function() {
   $("form[name='contact_form']").validate({
     rules: {
