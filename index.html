@@ -35,12 +35,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   
   <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
         integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
         crossorigin="anonymous">
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      
 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.1.0
@@ -54,11 +59,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center" >
-    
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    
-    <!-- </div class= "navbar rect"> -->
-
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/quantafic_logo.png" alt="logo" >
@@ -67,7 +68,6 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-      
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -94,8 +94,7 @@
           <li><a href="contact_update.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
-
-    
+    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -253,6 +252,7 @@
           <p>Aspiring for Digital Transformation and looking for Strategic Technology Partner then learn how we helped others.</p>
         </div>         
 
+        <div class="carousel-1 owl-carousel">
           <div class="row gy-4 portfolio-container " data-aos="fade-up" data-aos-delay="200" >
 
             <div class="col-lg-3 col-md-5 portfolio-item filter-remodeling">
@@ -309,505 +309,130 @@
 
             </div><!-- End Projects Item -->
 
-        </div><!-- End Projects Container -->
+          </div><!-- End Projects Container -->
+        </div>
 
+      
+      <script>
+        $(".carousel-1").owlCarousel({
+          margin: 20,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0:{
+              items:1,
+              nav: false
+            },
+            600:{
+              items:2,
+              nav: false
+            },
+            1000:{
+              items:3,
+              nav: false
+            }
+          }
+        });
+      </script>
       </div>
     </section><!-- End Our Projects Section -->
 
     <!-- ======= solutions Section ======= -->
     <section id="solutions" class="solutions section-bg">
-      <div class="container" data-aos="fade-up">
-
-       
-              <div class="section-header ">
-                <h2>Case Studies</h2>
-                <!-- <p>Quantafic expertise of developing Mobile applications(Native and Hybrid) as well as Web applications. This will be added advantage in automation journey. Also we can help in augmenting your team by providing resources around technologies. </p> -->
-              </div>
+      <div class="container" data-aos="fade-up">       
+        <div class="section-header ">
+          <h2>Case Studies</h2>
+        </div>
            
-              <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                      <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                    </div>
-                    <h3>Digital Customer Onboarding</h3>
-                    <p>Quantafic Digital onboarding helped leading Auto Finance Company to improve business by 23% while reducing the loan sanction time by 2 days.</p>
-                    <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                        <i class="fa-solid fa-helmet-safety"></i>
-                      </div>
-                      <h3>Bureau Connect</h3>
-                        <p>Quantafic Bureau Connect helped leading lender to reduce  credit bureau Cost by 70% & 112 Bureau Variables helped in improving portfolio quality by 48%.</p>
-                      <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
-                    </div> 
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="service-item  position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                        <i class="fa-solid fa-mountain-city"></i>
-                        </div>
-                        <h3>Q-Rulez</h3>
-                        <p>In memory processing feature of Quantafic Business rule engine helped Auto Finance company to sanction loan within 3 minutes.</p>
-                        <a href="#" class="readmore stretched-link">Learn more<i class="bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2 ">
-                      <div class="icon">
-                        <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                      </div>
-                      <h3>Q-Verifi</h3>
-                      <p>Leading private sector banks digitalised Appraisal and Inspection process by Q-Verifi product and achieved 22% business growth and this process automation helped in reducing the response time by 7 hours.</p>
-                      <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div><!-- End Service Item -->
-              
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                      </div>
-                      <h3>Process Automation</h3>
-                      <p>Learn about Quantafic implementations involving scrapping, bots, automated workflow, OCR, Android and iOS mobile applications, Secured and scalable applications etc.</p>
-                      <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div><!-- End Service Item -->
-                
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="service-item position-relative rounded-2">
-                    <div class="sol-content bg-light rounded-2">
-                      <div class="icon">
-                      <i class="fa-solid fa-trowel-bricks"></i>
-                    </div>
-                    <h3>OCR</h3>
-                    <p>Q-SCAN build using Image processing and Machine learning helped large conglomerate NBFC to extract data from different types of document Images or PDF files there by eliminating the manual data entry.</p>
-                    <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                    
-                  </div>
-                </div><!-- End Service Item -->
-                
-                <div style="padding-top: 5%; padding-left: 5%;">
-                  <p>
-                    To learn more about how Quantafic can help you in your digital transformation journey just <a href="contact_update.html">Write Us</a> or Call Us and we will be happy to discuss how we can be partner to your journey.
-                  </p>
-                </div>
-              </div>
-              
-          </div>
-        </section><!-- End solutions Section -->
-
-
-
-
-        <!-- <div class="row gy-4">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Digital Customer Onboarding</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%" >
-              </div>
-            </div>
-
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Risk, Fraud, Collection Analytics</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%">
-              </div>
-            </div>
-          </div>
-           
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Empowering Business Teams</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%">
-              </div>
-            </div>
-
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Quicker TAT</h4> 
-                 <img src="assets/img/case1.png" height="20%" width="20%" style="margin-left: 190px;">
-              </div>
-            </div>
-          </div>
-           
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Optimize Bureau Spend</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%" style="margin-left: 60px;" >
-              </div>
-            </div>
-
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Multi API Integration</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%"  style="margin-left: 100px;" >
-              </div>
-            </div>
-          </div>
-           
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Multi API Integration</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%">
-              </div>
-            </div> -->
-
-            <!-- <div class="col-lg-5 m-3">
-              <div class="d-flex border p-3 shadow">
-                <h4>Process Automation coupled with data Analytics</h4> 
-                <img src="assets/img/case1.png" height="20%" width="20%">
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative rounded-2">
               <div class="sol-content bg-light rounded-2">
                 <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                  <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                </div>
+                <h3>Digital Customer Onboarding</h3>
+                <p>Quantafic Digital onboarding helped leading Auto Finance Company to improve business by 23% while reducing the loan sanction time by 2 days.</p>
+                <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
               </div>
-              <h3>Customer Onboarding, Business Value Realized</h3>
-              <p>Quantafic expertise in developing iOS/ Android or Hybrid mobile applications will be added advantage in the automation journey. </p>
-              <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-              </div>
-              
             </div>
-          </div> --><!-- End Service Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          </div><!-- End Service Item -->
+              
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative rounded-2">
               <div class="sol-content bg-light rounded-2">
                 <div class="icon">
                   <i class="fa-solid fa-helmet-safety"></i>
                 </div>
-                <h3>Q-Verifi, Business Value Realized</h3>
-                <p>Quantafic offers custom software-development for Banks and NBFCs.</p>
-                <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-              </div>            
+                <h3>Bureau Connect</h3>
+                  <p>Quantafic Bureau Connect helped leading lender to reduce  credit bureau Cost by 70% & 112 Bureau Variables helped in improving portfolio quality by 48%.</p>
+                  <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
+              </div> 
             </div>
-          </div> --><!-- End Service Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          </div><!-- End Service Item -->
+              
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative rounded-2">
               <div class="sol-content bg-light rounded-2">
                 <div class="icon">
                   <i class="fa-solid fa-mountain-city"></i>
-                  </div>
-                  <h3>Empowering Business Teams</h3>
-                  <p>At Quantafic, we have been helping banks and NBFCs in these areas through the sampling models for a sharper sampling of loan applications.</p>
-                  <a href="#" class="readmore stretched-link">Learn more <i clasbi-arrow-right></i></a>
-              </div>
-              
+                </div>
+                <h3>Q-Rulez</h3>
+                <p>In memory processing feature of Quantafic Business rule engine helped Auto Finance company to sanction loan within 3 minutes.</p>
+                <a href="#" class="readmore stretched-link">Learn more<i class="bi-arrow-right"></i></a>
+              </div>                    
             </div>
-          </div> --><!-- End Service Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          </div><!-- End Service Item -->
+              
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative rounded-2">
               <div class="sol-content bg-light rounded-2 ">
                 <div class="icon">
                   <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                    </div>
-                      <h3>Marketing Campaign Management</h3>
-                      <p>Quantafic team has been extensively supporting a variety of marketing campaigns for well-known banks. Whether it be asset products, liability products etc.</p>
-                      <a href="marketing.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>      
+                </div>
+                <h3>Q-Verifi</h3>
+                <p>Leading private sector banks digitalised Appraisal and Inspection process by Q-Verifi product and achieved 22% business growth and this process automation helped in reducing the response time by 7 hours.</p>
+                <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
-          </div> --><!-- End Service Item -->
-
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative rounded-2">
-              <div class="sol-content bg-light rounded-2">
-                <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3>Resource <br> Augmentation</h3>
-              <p>Never is a managers team adequate. Either by skills, or by count, it is rare to have your team strength and skills just right. </p>
-              <a href="resource-augmentation.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div> --><!-- End Service Item -->
-
-           <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative rounded-2">
-              <div class="sol-content bg-light rounded-2">
-                <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>Training and Consulting</h3>
-              <p>Data Analytics is a new buzzword of the decade, with many more related words like artificial intelligence, machine learning, chat-bots, etc.</p>
-              <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-              </div>
+          </div><!-- End Service Item -->
               
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative rounded-2">
+              <div class="sol-content bg-light rounded-2">
+                <div class="icon">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3>Process Automation</h3>
+                <p>Learn about Quantafic implementations involving scrapping, bots, automated workflow, OCR, Android and iOS mobile applications, Secured and scalable applications etc.</p>
+                <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
-          </div> --><!-- End Service Item -->
-
+          </div><!-- End Service Item -->
+                
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative rounded-2">
+              <div class="sol-content bg-light rounded-2">
+                <div class="icon">
+                  <i class="fa-solid fa-trowel-bricks"></i>
+                </div>
+                <h3>OCR</h3>
+                <p>Q-SCAN build using Image processing and Machine learning helped large conglomerate NBFC to extract data from different types of document Images or PDF files there by eliminating the manual data entry.</p>
+                <a href="#" class="readmore stretched-link">Learn more<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+                
+          <div style="padding-top: 5%; padding-left: 5%;">
+            <p>
+              To learn more about how Quantafic can help you in your digital transformation journey just <a href="contact_update.html">Write Us</a> or Call Us and we will be happy to discuss how we can be partner to your journey.
+            </p>
+          </div>
         </div>
-
       </div>
     </section><!-- End solutions Section -->
-
-
-    
-
-    
-
-    
-    
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-        </div>
-
-        <div class="slides-2 swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
-
-          <!-- </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div> -->
-    <!-- </section> -->
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <!-- <section id="recent-blog-posts" class="recent-blog-posts">
-      <div class="container" data-aos="fade-up"">
-
-    
-    
-  <div class=" section-header">
-        <h2>Recent Blog Posts</h2>
-        <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
-      </div>
-
-      <div class="row gy-5">
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-              <span class="post-date">December 12</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div> -->
-        <!-- </div> -->
-        <!-- End post item -->
-
-        <!-- <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-              <span class="post-date">July 17</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div> -->
-        <!-- </div> -->
-        <!-- End post item -->
-
-        <!-- <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-              <span class="post-date">September 05</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div> -->
-        <!-- </div> -->
-        <!-- End post item -->
-
-      <!-- </div>
-
-      </div>
-    </section> -->
-    <!-- End Recent Blog Posts Section -->
-
   </main><!-- End #main -->
 
   <!-- <div id="consent-popup">
@@ -876,7 +501,7 @@
     </div>
     </div>
     
-    </footer>
+  </footer>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
